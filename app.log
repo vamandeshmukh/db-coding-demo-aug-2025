@@ -1,0 +1,1174 @@
+2025-08-06T17:09:28.462+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 7160 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:09:28.465+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:09:28.542+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T17:09:28.544+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T17:09:29.541+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:09:29.633+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-08-06T17:09:30.414+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:09:30.438+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:09:30.439+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:09:30.516+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:09:30.516+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2025-08-06T17:09:30.859+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:09:30.950+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-06T17:09:30.993+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:09:31.371+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:09:31.417+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T17:09:32.557+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-08-06T17:09:32.558+05:30 ERROR 7160 --- [db-coding-demo] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-08-06T17:09:32.560+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.db.coding.demo.App.main(App.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	... 38 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:957) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:821) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	... 51 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	... 54 common frames omitted
+
+2025-08-06T17:09:32.595+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:09:32.598+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:09:32.612+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:09:32.954+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:09:32.954+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:09:33.535+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:09:33.552+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T17:09:34.571+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-08-06T17:09:34.571+05:30 ERROR 7160 --- [db-coding-demo] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-08-06T17:09:34.578+05:30 ERROR 7160 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-08-06T17:09:34.580+05:30  WARN 7160 --- [db-coding-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-08-06T17:09:34.584+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-06T17:09:34.602+05:30  INFO 7160 --- [db-coding-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-06T17:09:34.629+05:30 ERROR 7160 --- [db-coding-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.db.coding.demo.App.main(App.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.9.jar:6.2.9]
+	... 22 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	... 43 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:957) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:821) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	... 56 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	... 59 common frames omitted
+
+2025-08-06T17:12:16.462+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:12:16.466+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:12:16.543+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T17:12:16.544+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T17:12:17.515+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:12:17.600+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2025-08-06T17:12:18.361+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:12:18.400+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:12:18.401+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:12:18.449+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:12:18.450+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1904 ms
+2025-08-06T17:12:18.739+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:12:18.824+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-06T17:12:18.857+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:12:19.154+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:12:19.206+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T17:12:19.751+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bbffc80
+2025-08-06T17:12:19.754+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T17:12:19.828+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:12:19.831+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:12:19.858+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:12:20.235+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:12:20.236+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:12:20.792+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:12:22.384+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:12:22.507+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:12:23.631+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:12:23.702+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:12:23.719+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 7.819 seconds (process running for 8.284)
+2025-08-06T17:12:57.535+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T17:12:57.535+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T17:12:57.537+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-06T17:13:31.087+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:13:31.095+05:30  INFO 5248 --- [db-coding-demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:13:31.109+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:13:31.114+05:30  INFO 5248 --- [db-coding-demo] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:13:31.117+05:30  INFO 5248 --- [db-coding-demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-06T17:13:31.129+05:30  INFO 5248 --- [db-coding-demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-06T17:13:31.204+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:13:31.205+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:13:31.370+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:13:31.382+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-08-06T17:13:31.463+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:13:31.464+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:13:31.465+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:13:31.485+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:13:31.485+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 278 ms
+2025-08-06T17:13:31.523+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:13:31.525+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:13:31.531+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:13:31.532+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-06T17:13:31.550+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14ef43c7
+2025-08-06T17:13:31.550+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-06T17:13:31.551+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:13:31.551+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:13:31.551+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:13:31.584+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:13:31.585+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:13:31.661+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:13:31.744+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:13:31.769+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:13:31.883+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:13:31.893+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:13:31.898+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.718 seconds (process running for 76.463)
+2025-08-06T17:13:31.901+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:13:48.510+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:13:48.513+05:30  INFO 5248 --- [db-coding-demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:13:48.528+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:13:48.531+05:30  INFO 5248 --- [db-coding-demo] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:13:48.533+05:30  INFO 5248 --- [db-coding-demo] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-06T17:13:48.543+05:30  INFO 5248 --- [db-coding-demo] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-06T17:13:48.628+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:13:48.629+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:13:48.780+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:13:48.788+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-06T17:13:48.865+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:13:48.866+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:13:48.866+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:13:48.881+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:13:48.881+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 250 ms
+2025-08-06T17:13:48.907+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:13:48.908+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:13:48.916+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:13:48.917+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-06T17:13:48.934+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6143e470
+2025-08-06T17:13:48.934+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-06T17:13:48.935+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:13:48.935+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:13:48.935+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:13:48.969+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:13:48.970+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:13:49.031+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:13:49.073+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:13:49.088+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:13:49.190+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:13:49.197+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:13:49.200+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.597 seconds (process running for 93.766)
+2025-08-06T17:13:49.201+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:13:56.847+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T17:13:56.847+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T17:13:56.848+05:30  INFO 5248 --- [db-coding-demo] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-06T17:14:09.955+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:14:09.958+05:30  INFO 5248 --- [db-coding-demo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:14:09.972+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:14:09.976+05:30  INFO 5248 --- [db-coding-demo] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:14:09.977+05:30  INFO 5248 --- [db-coding-demo] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-06T17:14:09.981+05:30  INFO 5248 --- [db-coding-demo] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-06T17:14:10.041+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:14:10.042+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:14:10.140+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:14:10.148+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-06T17:14:10.196+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:14:10.197+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:14:10.197+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:14:10.212+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:14:10.212+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2025-08-06T17:14:10.231+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:14:10.233+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:14:10.240+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:14:10.240+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-06T17:14:10.255+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70ce31f3
+2025-08-06T17:14:10.255+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-06T17:14:10.256+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:14:10.256+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:14:10.256+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:14:10.284+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:14:10.284+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:14:10.335+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:14:10.369+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:14:10.381+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:14:10.469+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:14:10.477+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:14:10.479+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.456 seconds (process running for 115.044)
+2025-08-06T17:14:10.480+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:14:58.617+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:14:58.620+05:30  INFO 5248 --- [db-coding-demo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:14:58.629+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:14:58.632+05:30  INFO 5248 --- [db-coding-demo] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:14:58.633+05:30  INFO 5248 --- [db-coding-demo] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-06T17:14:58.638+05:30  INFO 5248 --- [db-coding-demo] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-06T17:14:58.697+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:14:58.697+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:14:58.811+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:14:58.817+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-06T17:14:58.872+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:14:58.873+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:14:58.874+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:14:58.891+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:14:58.891+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2025-08-06T17:14:58.910+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:14:58.911+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:14:58.918+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:14:58.919+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-06T17:14:58.933+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b11d2c4
+2025-08-06T17:14:58.933+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-06T17:14:58.934+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:14:58.934+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:14:58.934+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:14:58.964+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:14:58.964+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:14:59.019+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:14:59.050+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:14:59.064+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:14:59.132+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:14:59.139+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:14:59.141+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.461 seconds (process running for 163.706)
+2025-08-06T17:14:59.141+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:15:52.316+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:15:52.319+05:30  INFO 5248 --- [db-coding-demo] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:15:52.330+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:15:52.331+05:30  INFO 5248 --- [db-coding-demo] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:15:52.333+05:30  INFO 5248 --- [db-coding-demo] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-06T17:15:52.339+05:30  INFO 5248 --- [db-coding-demo] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-06T17:15:52.408+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:15:52.408+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:15:52.538+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:15:52.545+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-06T17:15:52.593+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:15:52.595+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:15:52.596+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:15:52.613+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:15:52.613+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2025-08-06T17:15:52.630+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:15:52.632+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:15:52.638+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:15:52.639+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-06T17:15:52.655+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e5d4d1f
+2025-08-06T17:15:52.655+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-06T17:15:52.656+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:15:52.656+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:15:52.656+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:15:52.686+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:15:52.686+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:15:52.737+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:15:52.773+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:15:52.790+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:15:52.868+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:15:52.874+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:15:52.876+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.491 seconds (process running for 217.442)
+2025-08-06T17:15:52.877+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:17:55.194+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2025-08-06T17:17:55.196+05:30  INFO 5248 --- [db-coding-demo] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:17:55.211+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:17:55.214+05:30  INFO 5248 --- [db-coding-demo] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:17:55.215+05:30  INFO 5248 --- [db-coding-demo] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-06T17:17:55.219+05:30  INFO 5248 --- [db-coding-demo] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-08-06T17:17:55.290+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:17:55.291+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:17:55.496+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:17:55.502+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-06T17:17:55.545+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:17:55.545+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:17:55.546+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:17:55.563+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:17:55.564+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 271 ms
+2025-08-06T17:17:55.584+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:17:55.584+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:17:55.590+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:17:55.590+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-08-06T17:17:55.605+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e25727a
+2025-08-06T17:17:55.606+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-08-06T17:17:55.606+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:17:55.606+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:17:55.606+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:17:55.634+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:17:55.634+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:17:55.694+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:17:55.732+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:17:55.744+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:17:55.821+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:17:55.826+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:17:55.828+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.551 seconds (process running for 340.394)
+2025-08-06T17:17:55.828+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:18:06.366+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:18:06.369+05:30  INFO 5248 --- [db-coding-demo] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:18:06.386+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:18:06.389+05:30  INFO 5248 --- [db-coding-demo] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:06.389+05:30  INFO 5248 --- [db-coding-demo] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-08-06T17:18:06.398+05:30  INFO 5248 --- [db-coding-demo] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-08-06T17:18:06.469+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:18:06.470+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:18:06.569+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:18:06.577+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-06T17:18:06.626+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:18:06.627+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:18:06.628+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:18:06.640+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:18:06.640+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 168 ms
+2025-08-06T17:18:06.657+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:18:06.657+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:18:06.662+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:18:06.664+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-08-06T17:18:06.675+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39d76890
+2025-08-06T17:18:06.676+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-08-06T17:18:06.676+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:18:06.676+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:18:06.676+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:18:06.702+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:06.702+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:06.757+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:18:06.795+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:06.805+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:18:06.872+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:18:06.876+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:18:06.878+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.424 seconds (process running for 351.444)
+2025-08-06T17:18:06.879+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:18:47.914+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T17:18:47.916+05:30  INFO 5248 --- [db-coding-demo] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:18:47.934+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:18:47.937+05:30  INFO 5248 --- [db-coding-demo] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:47.939+05:30  INFO 5248 --- [db-coding-demo] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-08-06T17:18:47.948+05:30  INFO 5248 --- [db-coding-demo] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-08-06T17:18:48.007+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:18:48.007+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:18:48.102+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:18:48.108+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-08-06T17:18:48.149+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:18:48.150+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:18:48.151+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:18:48.160+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:18:48.161+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+2025-08-06T17:18:48.177+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:18:48.178+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:18:48.183+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:18:48.184+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2025-08-06T17:18:48.199+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7764fc4d
+2025-08-06T17:18:48.199+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2025-08-06T17:18:48.199+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:18:48.199+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:18:48.200+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:18:48.225+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:48.225+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:48.278+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:18:48.310+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:48.322+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:18:48.389+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:18:48.396+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:18:48.398+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.407 seconds (process running for 392.963)
+2025-08-06T17:18:48.398+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:18:54.886+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2025-08-06T17:18:54.888+05:30  INFO 5248 --- [db-coding-demo] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:18:54.905+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:18:54.908+05:30  INFO 5248 --- [db-coding-demo] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:54.909+05:30  INFO 5248 --- [db-coding-demo] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2025-08-06T17:18:54.916+05:30  INFO 5248 --- [db-coding-demo] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2025-08-06T17:18:54.985+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:18:54.985+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:18:55.092+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:18:55.101+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-06T17:18:55.150+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:18:55.151+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:18:55.151+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:18:55.167+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:18:55.167+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 181 ms
+2025-08-06T17:18:55.189+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:18:55.190+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:18:55.197+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:18:55.198+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2025-08-06T17:18:55.214+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dcc5829
+2025-08-06T17:18:55.214+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2025-08-06T17:18:55.215+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:18:55.215+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:18:55.216+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:18:55.245+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:55.246+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:55.297+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:18:55.340+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:55.350+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:18:55.421+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:18:55.426+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:18:55.429+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.458 seconds (process running for 399.995)
+2025-08-06T17:18:55.431+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:18:58.867+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:18:58.869+05:30  INFO 5248 --- [db-coding-demo] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:18:58.883+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:18:58.886+05:30  INFO 5248 --- [db-coding-demo] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:58.886+05:30  INFO 5248 --- [db-coding-demo] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2025-08-06T17:18:58.894+05:30  INFO 5248 --- [db-coding-demo] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2025-08-06T17:18:58.963+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:18:58.963+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:18:59.054+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:18:59.061+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-06T17:18:59.099+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:18:59.100+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:18:59.101+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:18:59.111+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:18:59.111+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2025-08-06T17:18:59.126+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:18:59.127+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:18:59.131+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:18:59.132+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2025-08-06T17:18:59.144+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da6d136
+2025-08-06T17:18:59.144+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2025-08-06T17:18:59.145+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:18:59.145+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:18:59.145+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:18:59.177+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:59.177+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:18:59.227+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:18:59.260+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:18:59.267+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:18:59.326+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:18:59.331+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:18:59.335+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.386 seconds (process running for 403.9)
+2025-08-06T17:18:59.336+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:19:03.795+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:19:03.796+05:30  INFO 5248 --- [db-coding-demo] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:19:03.802+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:19:03.803+05:30  INFO 5248 --- [db-coding-demo] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:03.804+05:30  INFO 5248 --- [db-coding-demo] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2025-08-06T17:19:03.808+05:30  INFO 5248 --- [db-coding-demo] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2025-08-06T17:19:03.874+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:19:03.874+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:19:03.961+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:19:03.968+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:19:04.001+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:19:04.002+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:19:04.002+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:19:04.010+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:19:04.011+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+2025-08-06T17:19:04.024+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:19:04.025+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:19:04.029+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:19:04.030+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2025-08-06T17:19:04.041+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9be8856
+2025-08-06T17:19:04.042+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2025-08-06T17:19:04.042+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:19:04.042+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:19:04.042+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:19:04.066+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:04.066+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:04.106+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:19:04.137+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:04.145+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:19:04.207+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:19:04.212+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:19:04.214+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.352 seconds (process running for 408.779)
+2025-08-06T17:19:04.214+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:19:09.675+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:19:09.678+05:30  INFO 5248 --- [db-coding-demo] [Thread-47] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:19:09.690+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:19:09.693+05:30  INFO 5248 --- [db-coding-demo] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:09.693+05:30  INFO 5248 --- [db-coding-demo] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2025-08-06T17:19:09.697+05:30  INFO 5248 --- [db-coding-demo] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2025-08-06T17:19:09.775+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:19:09.775+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:19:09.836+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:19:09.844+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:19:09.878+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:19:09.878+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:19:09.879+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:19:09.889+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:19:09.889+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-08-06T17:19:09.903+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:19:09.904+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:19:09.908+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:19:09.908+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2025-08-06T17:19:09.919+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64a798bc
+2025-08-06T17:19:09.920+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2025-08-06T17:19:09.920+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:19:09.920+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:19:09.921+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:19:09.950+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:09.950+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:09.998+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:19:10.028+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:10.038+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:19:10.100+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:19:10.104+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:19:10.105+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.343 seconds (process running for 414.671)
+2025-08-06T17:19:10.106+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:19:23.666+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T17:19:23.668+05:30  INFO 5248 --- [db-coding-demo] [Thread-51] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:19:23.682+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:19:23.685+05:30  INFO 5248 --- [db-coding-demo] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:23.686+05:30  INFO 5248 --- [db-coding-demo] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2025-08-06T17:19:23.689+05:30  INFO 5248 --- [db-coding-demo] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2025-08-06T17:19:23.766+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:19:23.766+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:19:23.849+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:19:23.856+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:19:23.895+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:19:23.896+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:19:23.896+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:19:23.907+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:19:23.907+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 139 ms
+2025-08-06T17:19:23.921+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:19:23.922+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:19:23.926+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:19:23.927+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2025-08-06T17:19:23.940+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33c5c3ca
+2025-08-06T17:19:23.940+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2025-08-06T17:19:23.941+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:19:23.941+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:19:23.941+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:19:23.969+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:23.969+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:24.011+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:19:24.046+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:24.055+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:19:24.117+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:19:24.121+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:19:24.123+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.374 seconds (process running for 428.689)
+2025-08-06T17:19:24.124+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:19:33.652+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T17:19:33.654+05:30  INFO 5248 --- [db-coding-demo] [Thread-55] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:19:33.669+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:19:33.673+05:30  INFO 5248 --- [db-coding-demo] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:33.674+05:30  INFO 5248 --- [db-coding-demo] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2025-08-06T17:19:33.687+05:30  INFO 5248 --- [db-coding-demo] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2025-08-06T17:19:33.776+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:19:33.776+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:19:33.855+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:19:33.861+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:19:33.897+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:19:33.898+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:19:33.898+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:19:33.912+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:19:33.912+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 134 ms
+2025-08-06T17:19:33.929+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:19:33.930+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:19:33.934+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:19:33.935+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2025-08-06T17:19:33.949+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@446a0086
+2025-08-06T17:19:33.949+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2025-08-06T17:19:33.949+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:19:33.949+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:19:33.949+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-15)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:19:33.976+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:33.976+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:34.019+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:19:34.053+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:34.064+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:19:34.128+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:19:34.134+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:19:34.136+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.374 seconds (process running for 438.701)
+2025-08-06T17:19:34.136+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:19:44.671+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T17:19:44.673+05:30  INFO 5248 --- [db-coding-demo] [Thread-59] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:19:44.689+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:19:44.692+05:30  INFO 5248 --- [db-coding-demo] [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:44.693+05:30  INFO 5248 --- [db-coding-demo] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2025-08-06T17:19:44.703+05:30  INFO 5248 --- [db-coding-demo] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2025-08-06T17:19:44.776+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:19:44.776+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:19:44.850+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:19:44.858+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:19:44.892+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:19:44.893+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:19:44.893+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:19:44.904+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:19:44.904+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2025-08-06T17:19:44.919+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:19:44.920+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:19:44.925+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:19:44.926+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2025-08-06T17:19:44.940+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ca4c31c
+2025-08-06T17:19:44.940+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2025-08-06T17:19:44.940+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:19:44.940+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:19:44.940+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-16)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:19:44.967+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:44.968+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:19:45.006+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:19:45.040+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:19:45.048+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:19:45.111+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:19:45.115+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:19:45.116+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.352 seconds (process running for 449.682)
+2025-08-06T17:19:45.117+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:18.017+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:18.019+05:30  INFO 5248 --- [db-coding-demo] [Thread-63] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:18.028+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:18.029+05:30  INFO 5248 --- [db-coding-demo] [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:18.030+05:30  INFO 5248 --- [db-coding-demo] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2025-08-06T17:20:18.037+05:30  INFO 5248 --- [db-coding-demo] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2025-08-06T17:20:18.099+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:18.099+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:18.178+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:18.183+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:20:18.216+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:18.216+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:18.216+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:18.226+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:18.226+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 125 ms
+2025-08-06T17:20:18.241+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:18.242+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:18.245+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:18.246+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2025-08-06T17:20:18.259+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18f985a0
+2025-08-06T17:20:18.259+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2025-08-06T17:20:18.260+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:18.260+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:18.260+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-17)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:18.280+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:18.280+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:18.313+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:18.345+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:18.351+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:18.470+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-06T17:20:18.977+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:18.984+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:18.986+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.899 seconds (process running for 483.551)
+2025-08-06T17:20:18.987+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:28.533+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:28.535+05:30  INFO 5248 --- [db-coding-demo] [Thread-67] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:28.548+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:28.551+05:30  INFO 5248 --- [db-coding-demo] [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:28.552+05:30  INFO 5248 --- [db-coding-demo] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2025-08-06T17:20:28.556+05:30  INFO 5248 --- [db-coding-demo] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2025-08-06T17:20:28.634+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:28.634+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:28.703+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:28.709+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:20:28.746+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:28.747+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:28.747+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:28.775+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:28.775+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2025-08-06T17:20:28.793+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:28.794+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:28.798+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:28.799+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2025-08-06T17:20:28.809+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3828d877
+2025-08-06T17:20:28.810+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2025-08-06T17:20:28.810+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:28.810+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:28.810+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-18)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:28.829+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:28.829+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:28.881+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:28.915+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:28.929+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:28.999+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:29.006+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:29.008+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.387 seconds (process running for 493.574)
+2025-08-06T17:20:29.009+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:41.569+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2025-08-06T17:20:41.572+05:30  INFO 5248 --- [db-coding-demo] [Thread-71] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:41.583+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:41.585+05:30  INFO 5248 --- [db-coding-demo] [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:41.586+05:30  INFO 5248 --- [db-coding-demo] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2025-08-06T17:20:41.588+05:30  INFO 5248 --- [db-coding-demo] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2025-08-06T17:20:41.666+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:41.666+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:41.753+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:41.759+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:20:41.805+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:41.805+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:41.805+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:41.816+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:41.816+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+2025-08-06T17:20:41.836+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:41.837+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:41.841+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:41.843+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2025-08-06T17:20:41.858+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6638fe99
+2025-08-06T17:20:41.858+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2025-08-06T17:20:41.858+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:41.858+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:41.859+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-19)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:41.889+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:41.889+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:41.939+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:41.969+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:41.977+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:42.037+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:42.043+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:42.045+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.39 seconds (process running for 506.61)
+2025-08-06T17:20:42.045+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:43.467+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:43.468+05:30  INFO 5248 --- [db-coding-demo] [Thread-75] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:43.483+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:43.485+05:30  INFO 5248 --- [db-coding-demo] [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:43.486+05:30  INFO 5248 --- [db-coding-demo] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2025-08-06T17:20:43.493+05:30  INFO 5248 --- [db-coding-demo] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2025-08-06T17:20:43.566+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:43.566+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:43.649+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:43.658+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:20:43.690+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:43.691+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:43.691+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:43.702+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:43.703+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 136 ms
+2025-08-06T17:20:43.721+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:43.722+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:43.726+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:43.727+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2025-08-06T17:20:43.741+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58965210
+2025-08-06T17:20:43.741+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2025-08-06T17:20:43.741+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:43.743+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:43.743+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-20)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:43.771+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:43.771+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:43.811+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:43.841+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:43.854+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:43.919+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:43.923+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:43.925+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.369 seconds (process running for 508.49)
+2025-08-06T17:20:43.925+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:47.385+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:47.386+05:30  INFO 5248 --- [db-coding-demo] [Thread-79] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:47.399+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:47.403+05:30  INFO 5248 --- [db-coding-demo] [Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:47.404+05:30  INFO 5248 --- [db-coding-demo] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2025-08-06T17:20:47.409+05:30  INFO 5248 --- [db-coding-demo] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2025-08-06T17:20:47.484+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:47.485+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:47.558+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:47.567+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-08-06T17:20:47.604+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:47.606+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:47.606+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:47.617+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:47.617+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 131 ms
+2025-08-06T17:20:47.631+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:47.632+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:47.635+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:47.636+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2025-08-06T17:20:47.649+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bf99a98
+2025-08-06T17:20:47.649+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2025-08-06T17:20:47.650+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:47.650+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:47.650+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-21)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:47.669+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:47.670+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:47.708+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:47.741+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:47.746+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:47.819+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:47.828+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:47.829+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.357 seconds (process running for 512.395)
+2025-08-06T17:20:47.831+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:51.271+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:51.273+05:30  INFO 5248 --- [db-coding-demo] [Thread-83] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:51.285+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:51.287+05:30  INFO 5248 --- [db-coding-demo] [Thread-83] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:51.288+05:30  INFO 5248 --- [db-coding-demo] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2025-08-06T17:20:51.293+05:30  INFO 5248 --- [db-coding-demo] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2025-08-06T17:20:51.354+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:51.354+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:51.418+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:51.425+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2025-08-06T17:20:51.463+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:51.463+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:51.463+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:51.478+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:51.478+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2025-08-06T17:20:51.490+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:51.491+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:51.496+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:51.496+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2025-08-06T17:20:51.507+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fc9e3ef
+2025-08-06T17:20:51.507+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2025-08-06T17:20:51.508+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:51.508+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:51.508+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-22)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:51.530+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:51.530+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:51.563+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:51.587+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:51.598+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:51.671+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:51.676+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:51.677+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.332 seconds (process running for 516.243)
+2025-08-06T17:20:51.678+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T17:20:59.174+05:30  INFO 5248 --- [db-coding-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-06T17:20:59.176+05:30  INFO 5248 --- [db-coding-demo] [Thread-87] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T17:20:59.187+05:30  INFO 5248 --- [db-coding-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T17:20:59.189+05:30  INFO 5248 --- [db-coding-demo] [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:59.189+05:30  INFO 5248 --- [db-coding-demo] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2025-08-06T17:20:59.194+05:30  INFO 5248 --- [db-coding-demo] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2025-08-06T17:20:59.255+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Starting App using Java 21.0.7 with PID 5248 (D:\Projects\EclipseWS\db-coding-demo\target\classes started by DELL in D:\Projects\EclipseWS\db-coding-demo)
+2025-08-06T17:20:59.255+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T17:20:59.308+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T17:20:59.316+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2025-08-06T17:20:59.351+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-06T17:20:59.352+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T17:20:59.352+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-06T17:20:59.363+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-08-06T17:20:59.363+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 107 ms
+2025-08-06T17:20:59.375+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T17:20:59.376+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T17:20:59.378+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T17:20:59.379+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2025-08-06T17:20:59.392+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3db24735
+2025-08-06T17:20:59.392+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2025-08-06T17:20:59.392+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T17:20:59.392+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T17:20:59.393+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-23)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T17:20:59.410+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:59.410+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.db.coding.demo.model.BookUserId
+2025-08-06T17:20:59.438+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T17:20:59.467+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T17:20:59.476+05:30  WARN 5248 --- [db-coding-demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T17:20:59.549+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T17:20:59.557+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/api/v1'
+2025-08-06T17:20:59.559+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] com.db.coding.demo.App                   : Started App in 0.315 seconds (process running for 524.124)
+2025-08-06T17:20:59.560+05:30  INFO 5248 --- [db-coding-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
